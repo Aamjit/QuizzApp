@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">QuizApp</string>
+    <string name="icon">icon</string>
+    <string name="accounts">accounts</string>
+    <string name="play">play button</string>
+    <string name="exit">Exit</string>
+    <string name="label1">Ready to test your knowledge?</string>
+    <string name="label2">How far can you get everything right?</string>
+    <string name="category">Choose Category</string>
+    <string name="difficulty">choose difficulty</string>
+    <string name="easy">Easy</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="hard">hard</string>
+
+</resources>

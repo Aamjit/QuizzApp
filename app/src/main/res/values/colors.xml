@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="buttonbg">#2C43A6</color>
+    <color name="Marrs_G">#008c8c</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="cardbg">#006362</color>
+    <color name="background">#B2EBF2</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="Text">#673AB7</color>
+    <color name="black">#000000</color>
+
+
+</resources>
