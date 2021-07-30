@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
             final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle("Exit");
             builder.setMessage("Do you want to Exit?");
-            builder.setPositiveButton("Yes!", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int i) {
                     finish();
                 }
             });
-            builder.setNegativeButton("Not now!", new DialogInterface.OnClickListener() {
+            builder.setNegativeButton("Not now", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
