@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class ResultActivity extends AppCompatActivity {
 
     TextView tv, tv2, tv3;
-    Button btnRestart;
+    Button btnRestart, btnExit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,13 +23,14 @@ public class ResultActivity extends AppCompatActivity {
         tv3 = (TextView)findViewById(R.id.tvres3);
 
         btnRestart = (Button) findViewById(R.id.btnRestart);
+        btnExit = (Button) findViewById(R.id.exitButton);
 
         StringBuffer sb = new StringBuffer();
         sb.append("Correct answers: " + Questions.correct +"\n");
         StringBuffer sb2 = new StringBuffer();
-        sb2.append("Correct answers: " + Questions.wrong +"\n");
+        sb2.append("Wrong answers: " + Questions.wrong +"\n");
         StringBuffer sb3 = new StringBuffer();
-        sb3.append("Correct answers: " + Questions.correct +"\n");
+        sb3.append("Your Score: " + Questions.correct +"\n");
 
         tv.setText(sb);
         tv2.setText(sb2);
@@ -41,8 +42,18 @@ public class ResultActivity extends AppCompatActivity {
         btnRestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent (getApplicationContext(), MainActivity.class);
-                startActivity(in);            }
+                Intent in = new Intent (ResultActivity.this, MainActivity.class);
+                ResultActivity.this.finish();
+                startActivity(in);
+            }
         });
+
+        btnExit.setOnClickListener((new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        }));
+
     }
 }

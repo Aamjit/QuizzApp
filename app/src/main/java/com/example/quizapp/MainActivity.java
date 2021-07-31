@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent categoryIntent = new Intent(MainActivity.this,Category.class);
+                Intent categoryIntent = new Intent(getApplicationContext() ,Category.class);
                 startActivity(categoryIntent);
 //                setContentView(R.layout.activity_category);
             }

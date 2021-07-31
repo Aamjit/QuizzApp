@@ -26,7 +26,7 @@ public class Difficulty extends AppCompatActivity {
         Button option1 = (Button) findViewById(R.id.easy);
         Button option2 = (Button) findViewById(R.id.intermediate);
         Button option3 = (Button) findViewById(R.id.hard);
-        Intent intent = new Intent(Difficulty.this, Questions.class);
+        Intent intent = new Intent(getApplicationContext(), Questions.class);
 
         option1.setOnClickListener(new View.OnClickListener() {
             @Override
