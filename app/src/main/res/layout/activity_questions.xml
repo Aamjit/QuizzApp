@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Questions"
+    android:background="@color/teal_200"
     android:orientation="vertical"
-    android:background="@color/background">
+
+    >
 
     <TextView
         android:id="@+id/DispName"
@@ -40,28 +41,32 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="A" />
+            android:text="A"
+            android:layout_marginStart="20dp"/>
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="B" />
+            android:text="B"
+            android:layout_marginStart="20dp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C"
             android:id="@+id/radioButton3"
-            android:checked="false" />
+            android:checked="false"
+            android:layout_marginStart="20dp"/>
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="false"
-            android:text="D" />
+            android:text="D"
+            android:layout_marginStart="20dp"/>
 
     </RadioGroup>
 
@@ -96,13 +101,13 @@
 
     <TextView
         android:id="@+id/tvque"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_above="@+id/answersGroup"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="52dp"
+        android:gravity="center"
         android:text="Questions"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 

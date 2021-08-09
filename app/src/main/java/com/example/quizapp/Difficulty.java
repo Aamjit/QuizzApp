@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.DeadSystemException;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -26,7 +25,7 @@ public class Difficulty extends AppCompatActivity {
         Button option1 = (Button) findViewById(R.id.easy);
         Button option2 = (Button) findViewById(R.id.intermediate);
         Button option3 = (Button) findViewById(R.id.hard);
-        Intent intent = new Intent(getApplicationContext(), Questions.class);
+        Intent intent = new Intent(getApplicationContext(), QuestionsGeography.class);
 
         option1.setOnClickListener(new View.OnClickListener() {
             @Override

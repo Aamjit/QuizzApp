@@ -1,6 +1,5 @@
-package com.example.quizapp;
 
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.quizapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,37 +10,42 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Questions extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
 
+public class QuestionsScience extends AppCompatActivity {
     TextView tv;
     Button submitButton, quitButton;
     RadioGroup radio_g;
     RadioButton rb1,rb2,rb3,rb4;
 
     String questions[] = {
-            "The Tropic of Cancer does not pass through which of the Indian State?",
-            "Which river of India is called Vridha Ganga?",
-            "Which of the following is a Trans-Himalayan river?",
-            "India lies in which hemisphere?",
-            "Which is the eastern most state in India?",
-            "The driest part in india is in",
-            "Eastern Ghats and Western Ghats meet at the",
-            "Guwahati is situated on the bank of the river",
-            "Which of the following is the largest lagoon in India?",
-            "Which state of India has the smallest land area?"
+            "The blue colour of the clear sky is due to",
+            "Which one of the following types of waves are used in a night vision apparatus?",
+            "The weight of an object will be minimum when it is placed at  ?",
+            "In fireworks, the green flame is produced because of",
+            "What does airbag, used for safety of car driver, contain?",
+            "Which one of the following types of laser is used in laser printers?",
+            "Potassium Permanganate is used for purifying drinking water, because",
+            "The Ozone Layer restricts from",
+            "The filament of an electric bulb is made of",
+            "Which of the following plants is not capable of manufacturing own food?"
     };
-    String answers[] = {"Odisha","Godavari","Indus","Northern and Eastern","Arunachal Pradesh","Western Rajasthan","Nilgiri Hills","Brahmaputra","Chilka lagoon","Goa"};
+    String answers[] = {"Dispersion of light","Infra-red waves",
+            "The center of the Earth","Barium",
+            "Sodium azide","Semiconductor laser",
+            "it is an oxidising agent","Ultraviolet Radiation",
+            "tungsten","Mushroom"};
     String opt[] = {
-            "Madhya Pradesh","West Bengal","Rajasthan","Odisha",
-            "Krishna","Godavari","Kaveri","Narmada",
-            "Ganga","Yamuna","Indus","Ravi",
-            "Northern and Eastern","Southern and Eastern","Northern and Western","Southern and Western",
-            "Assam","Nagaland","Arunachal Pradesh","Manipur",
-            "Western Rajasthan","Punjab","Bihar","GUjarat",
-            "Annamalai Hillls","Palani Hills","Nilgiri Hills","Cardamon Hills",
-            "Teesta","Brahmaputra","Hooghly","Sone",
-            "Vembanad lagoon","Chilka lagoon","Pulicat lagoon","Kolleru",
-            "Goa","Nagaland","Sikkim","Tripura"
+            "Diffractio of Light","Dispersion of light","Reflection of light","Refraction of light",
+            "Radio Waves","Microwaves","Infra-red waves","None of the above",
+            "The North Pole","The South Pole","The Equator","The center of the Earth",
+            "Sodium","Potassium","Barium","Mercury",
+            "Sodium bicarbonate","Sodium azide","Sodium nitrite","Sodium peroxide",
+            "Semiconductor laser","Dye laser","Gas laser","Excimer laser",
+            "It is a sterilising agent","It dissolves the iumpurities of water","It is a reducing agent","it is an oxidising agent",
+            "Infrared Rays","Radio waves","Ultraviolet Radiation","X-rays and Gamma rays",
+            "tungsten","Nichrome","Graphite","Iron",
+            "Algae","Mushroom","Carrot","Cabbage"
     };
     int flag=0;
     public static int marks=0,correct=0,wrong=0;
@@ -57,7 +61,7 @@ public class Questions extends AppCompatActivity {
 //        String name= intent.getStringExtra("myname");
 
 //        if (name.trim().equals(""))
-            textView.setText("Hello User");
+        textView.setText("Hello User");
 
         submitButton=(Button)findViewById(R.id.buttonNextQuestion);
         quitButton=(Button)findViewById(R.id.buttonQuit);
@@ -126,3 +130,4 @@ public class Questions extends AppCompatActivity {
         });
     }
 }
+

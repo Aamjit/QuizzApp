@@ -7,7 +7,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ResultActivity">
+    tools:context=".ResultActivity"
+    android:background="@color/teal_200"
+    >
 
     <TextView
         android:id="@+id/tvres"
@@ -18,14 +20,12 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="70dp"
-
         android:background="#76FF03"
         android:text="Large Text"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#000000"
-        android:textSize="19dp" />
-
+        android:textSize="19sp" />
 
 
     <TextView
@@ -34,24 +34,21 @@
         android:layout_height="28dp"
         android:layout_below="@+id/tvres"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginTop="31dp"
         android:background="#F44336"
         android:text="Large Text"
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#000000"
-        android:textSize="19dp" />
+        android:textSize="19sp" />
 
     <TextView
         android:id="@+id/tvres3"
         android:layout_width="wrap_content"
-        android:layout_height="28dp"
+        android:layout_height="44dp"
         android:layout_below="@+id/tvres2"
         android:layout_alignEnd="@+id/tvres2"
-        android:layout_alignRight="@+id/tvres2"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="33dp"
@@ -60,18 +57,17 @@
         android:textAlignment="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#000000"
-        android:textSize="19dp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/btnRestart"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="119dp"
         android:background="#01579B"
-        android:text="Restart"
+        android:text="@string/home"
         android:textColor="#ffffff" />
 
     <Button
@@ -82,10 +78,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="50dp"
-        android:backgroundTint="#AA3939"
+        android:backgroundTint="@color/button_red"
         android:text="exit"
-
-        />
-
+        tools:ignore="TextContrastCheck" />
 
 </RelativeLayout>

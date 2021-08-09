@@ -26,24 +26,25 @@ public class ResultActivity extends AppCompatActivity {
         btnExit = (Button) findViewById(R.id.exitButton);
 
         StringBuffer sb = new StringBuffer();
-        sb.append("Correct answers: " + Questions.correct +"\n");
+        sb.append("Correct answers: " + QuestionsGeography.correct +"\n");
         StringBuffer sb2 = new StringBuffer();
-        sb2.append("Wrong answers: " + Questions.wrong +"\n");
+        sb2.append("Wrong answers: " + QuestionsGeography.wrong +"\n");
         StringBuffer sb3 = new StringBuffer();
-        sb3.append("Your Score: " + Questions.correct +"\n");
+        sb3.append("Your Score: " + QuestionsGeography.correct +"\n");
 
         tv.setText(sb);
         tv2.setText(sb2);
         tv3.setText(sb3);
 
-        Questions.correct = 0;
-        Questions.wrong = 0;
+        QuestionsGeography.correct = 0;
+        QuestionsGeography.wrong = 0;
 
         btnRestart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent (ResultActivity.this, MainActivity.class);
-                ResultActivity.this.finish();
+                in.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
                 startActivity(in);
             }
         });

@@ -36,56 +36,71 @@ public class Category extends AppCompatActivity {
         Button option3 = (Button) findViewById(R.id.option3);
         Button option4 = (Button) findViewById(R.id.option4);
         Button option5 = (Button) findViewById(R.id.option5);
-        Intent intent = new Intent(getApplicationContext(), Difficulty.class);
+
+
+//        Intent intent = new Intent(getApplicationContext(), Difficulty.class);
 
         option1.setOnClickListener(new View.OnClickListener() {
-//            Intent intent = new Intent(, Difficulty.class);
 
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                Intent intent1 = new Intent(getApplicationContext(), QuestionsGeography.class);
+                startActivity(intent1);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
 
             }
         });
 
         option2.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                Intent intent2 = new Intent(getApplicationContext(), QuestionsHistory.class);
+                startActivity(intent2);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
 
             }
         });
 
         option3.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                Intent intent3 = new Intent(getApplicationContext(), QuestionsSports.class);
+                startActivity(intent3);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
 
             }
         });
 
         option4.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                Intent intent4 = new Intent(getApplicationContext(), QuestionsSports.class);
+                startActivity(intent4);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
 
             }
         });
 
         option5.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                startActivity(intent);
+                Intent intent5 = new Intent(getApplicationContext(), QuestionsScience.class);
+                startActivity(intent5);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
 
             }
         });
+    }
 
-        }
     public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()) {
-            case android.R.id.home:
+        if(item.getItemId() == android.R.id.home) {
                 finish();
-                return true;
+            overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_left);
+            return true;
         }
         return super.onOptionsItemSelected(item);
     }
@@ -93,4 +108,4 @@ public class Category extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
     }
-    }
+}

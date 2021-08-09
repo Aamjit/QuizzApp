@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".Category">
+    tools:context=".Category"
+    android:background="@color/teal_200">
 
     <TextView
         android:id="@+id/category"
@@ -81,7 +81,7 @@
         android:layout_height="60dp"
         android:layout_marginTop="24sp"
         android:backgroundTint="@color/buttonbg"
-        android:text="@string/music"
+        android:text="culture"
         android:textColor="@color/text_white"
         android:textSize="@dimen/_16sdp"
         app:layout_constraintBottom_toBottomOf="parent"

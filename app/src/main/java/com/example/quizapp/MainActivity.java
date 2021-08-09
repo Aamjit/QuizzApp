@@ -47,13 +47,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton play = (ImageButton) findViewById(R.id.play_button);
+        Button play = (Button) findViewById(R.id.play_button);
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent categoryIntent = new Intent(getApplicationContext() ,Category.class);
                 startActivity(categoryIntent);
-//                setContentView(R.layout.activity_category);
+                overridePendingTransition( R.anim.slide_in_right, R.anim.slide_out_right);
             }
         });
     }
