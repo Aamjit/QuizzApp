@@ -11,5 +11,10 @@
     <string name="easy">Easy</string>
     <string name="intermediate">Intermediate</string>
     <string name="hard">hard</string>
-
+    <string name="question1">A tsunami is a</string>
+    <string name="geography">Geography</string>
+    <string name="history">history</string>
+    <string name="sports">sports</string>
+    <string name="music">music</string>
+    <string name="science">science</string>
 </resources>

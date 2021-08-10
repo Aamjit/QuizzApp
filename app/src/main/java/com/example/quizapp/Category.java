@@ -31,16 +31,15 @@ public class Category extends AppCompatActivity {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-
-
         Button option1 = (Button) findViewById(R.id.option1);
         Button option2 = (Button) findViewById(R.id.option2);
         Button option3 = (Button) findViewById(R.id.option3);
         Button option4 = (Button) findViewById(R.id.option4);
         Button option5 = (Button) findViewById(R.id.option5);
-        Intent intent = new Intent(Category.this, Difficulty.class);
+        Intent intent = new Intent(getApplicationContext(), Difficulty.class);
+
         option1.setOnClickListener(new View.OnClickListener() {
-            Intent intent = new Intent(Category.this, Difficulty.class);
+//            Intent intent = new Intent(, Difficulty.class);
 
             @Override
             public void onClick(View v) {

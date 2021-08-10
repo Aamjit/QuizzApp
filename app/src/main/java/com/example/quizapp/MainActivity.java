@@ -30,13 +30,13 @@ public class MainActivity extends AppCompatActivity {
             final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
             builder.setTitle("Exit");
             builder.setMessage("Do you want to Exit?");
-            builder.setPositiveButton("Yes!", new DialogInterface.OnClickListener() {
+            builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int i) {
                     finish();
                 }
             });
-            builder.setNegativeButton("Not now!", new DialogInterface.OnClickListener() {
+            builder.setNegativeButton("Not now", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     dialog.dismiss();
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent categoryIntent = new Intent(MainActivity.this,Category.class);
+                Intent categoryIntent = new Intent(getApplicationContext() ,Category.class);
                 startActivity(categoryIntent);
 //                setContentView(R.layout.activity_category);
             }
