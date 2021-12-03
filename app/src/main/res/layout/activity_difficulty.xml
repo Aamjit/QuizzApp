@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/teal_200"
     tools:context=".Difficulty">
 
     <TextView
@@ -16,7 +16,7 @@
         android:text="@string/difficulty"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textColor="@color/Primary_text"
+        android:textColor="@color/Text_primary"
         android:textSize="48sp"
         android:typeface="sans"
         app:layout_constraintBottom_toBottomOf="parent"

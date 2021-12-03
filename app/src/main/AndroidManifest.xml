@@ -17,6 +17,8 @@
 
         <activity android:name=".Difficulty" />
         <activity android:name=".Category" />
+
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

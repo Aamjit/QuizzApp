@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/teal_200"
@@ -22,7 +21,7 @@
         android:layout_marginEnd="0dp"
         android:gravity="center"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/accent_material_light" />
+        android:textColor="@color/Text_primary" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -42,6 +41,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="A"
+            android:textColor="@color/Text_primary"
             android:layout_marginStart="20dp"/>
 
         <RadioButton
@@ -50,12 +50,14 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="B"
+            android:textColor="@color/Text_primary"
             android:layout_marginStart="20dp"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="C"
+            android:textColor="@color/Text_primary"
             android:id="@+id/radioButton3"
             android:checked="false"
             android:layout_marginStart="20dp"/>
@@ -66,6 +68,7 @@
             android:layout_height="wrap_content"
             android:checked="false"
             android:text="D"
+            android:textColor="@color/Text_primary"
             android:layout_marginStart="20dp"/>
 
     </RadioGroup>
@@ -81,6 +84,7 @@
         android:layout_marginEnd="0dp"
         android:layout_marginRight="0dp"
         android:background="#FF5722"
+        android:gravity="center"
         android:text="Next Question"
         android:textColor="#ffffff"
         android:textSize="18sp" />
@@ -92,6 +96,7 @@
         android:layout_below="@+id/buttonNextQuestion"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:gravity="center"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="0dp"
         android:background="#01579B"
@@ -109,7 +114,8 @@
         android:layout_marginBottom="52dp"
         android:gravity="center"
         android:text="Questions"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/Text_primary" />
 
     <TextView
         android:id="@+id/scoreText"
@@ -120,7 +126,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginBottom="20dp"
         android:text="Your Score"
-        android:textAppearance="@color/abc_background_cache_hint_selector_material_dark"
+        android:textAppearance="@color/black"
         android:textColor="#000000"
         android:textSize="19dp" />
 

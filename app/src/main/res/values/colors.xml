@@ -4,13 +4,15 @@
     <color name="buttonbg">#2C43A6</color>
     <color name="Marrs_G">#008c8c</color>
     <color name="teal_200">#C8E6C9</color>
-    <color name="cardbg">#006362</color>
-    <color name="background">#4DB6AC</color>
-    <color name="text_white">#FFFFFFFF</color>
-    <color name="Text">#673AB7</color>
-    <color name="Primary_text">#012f63</color>
+    <color name="cardbg">#69d2cd</color>
+    <color name="background_light">#e8ddcb</color>
+    <color name="text_white">#ffffffff</color>
+    <color name="Text_primary">#0d0f36</color>
+    <color name="Text_secondary">#012f63</color>
     <color name="black">#000000</color>
-    <color name="exit_red">#AA393f</color>
+
+    <color name="background_dark">#031634</color>
+    <color name="text_dark">#cdb380</color>
 
     <color name="button_red">#F44336</color>
 
